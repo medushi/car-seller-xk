@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.loginregister">
+    package="com.example.carsellerxk">
 
     <application
         android:allowBackup="true"
@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"></activity>
-        <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.carsellerxk.Register"></activity>
+        <activity android:name="com.example.carsellerxk.Login" />
+        <activity android:name="com.example.carsellerxk.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

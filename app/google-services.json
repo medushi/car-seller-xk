@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "235835769142",
+    "firebase_url": "https://car-seller-kosova.firebaseio.com",
+    "project_id": "car-seller-kosova",
+    "storage_bucket": "car-seller-kosova.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235835769142:android:0f16db799fa661f7947397",
+        "android_client_info": {
+          "package_name": "com.example.carsellerxk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235835769142-ko4tkpv6hg1n6osbcms6hrtjbjf4ui55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvq_tCIeeHRuo2ZWkkVmlZmbfNOMbPGzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235835769142-ko4tkpv6hg1n6osbcms6hrtjbjf4ui55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

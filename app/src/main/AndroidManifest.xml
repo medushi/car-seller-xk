@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.carsellerxk.Register"></activity>
-        <activity android:name="com.example.carsellerxk.Login" />
-        <activity android:name="com.example.carsellerxk.MainActivity">
+        <activity android:name=".More"></activity>
+        <activity android:name=".Search" />
+        <activity android:name=".Saved" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

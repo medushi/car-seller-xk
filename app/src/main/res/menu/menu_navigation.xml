@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Kryefaqja"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="Kërko"
+        android:icon="@drawable/ic_search_black_24dp"/>
+
+    <item
+        android:id="@+id/saved"
+        android:title="Të Ruajtura"
+        android:icon="@drawable/ic_favorite_black_24dp"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="Profili"
+        android:icon="@drawable/ic_person_black_24dp"/>
+
+    <item android:id="@+id/more"
+        android:title="Më shumë"
+        android:icon="@drawable/ic_more_horiz_black_24dp"/>
+</menu>

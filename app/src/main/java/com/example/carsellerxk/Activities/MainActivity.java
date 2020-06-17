@@ -6,10 +6,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
+import com.example.carsellerxk.Activities.MoreActivity;
+import com.example.carsellerxk.Activities.NewPostActivity;
+import com.example.carsellerxk.Activities.ProfileActivity;
+import com.example.carsellerxk.Activities.SavedActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity{
@@ -34,22 +35,22 @@ public class MainActivity extends AppCompatActivity{
                         return true;
                     case R.id.search:
                         startActivity(new Intent(getApplicationContext()
-                                ,Search.class));
+                                , NewPostActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.saved:
                         startActivity(new Intent(getApplicationContext()
-                                ,Saved.class));
+                                , SavedActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.profile:
                         startActivity(new Intent(getApplicationContext()
-                                ,Profile.class));
+                                , ProfileActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.more:
                         startActivity(new Intent(getApplicationContext()
-                                ,More.class));
+                                , MoreActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

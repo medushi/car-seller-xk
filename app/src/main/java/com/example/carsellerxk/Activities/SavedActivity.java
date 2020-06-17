@@ -1,46 +1,27 @@
-package com.example.carsellerxk;
+package com.example.carsellerxk.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 
+import com.example.carsellerxk.MainActivity;
+import com.example.carsellerxk.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Profile extends AppCompatActivity /*implements View.OnClickListener*/ {
-
-//        Button bLogout;
-//        EditText etUsername;
-//        EditText etEmail;
-
+public class SavedActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_saved);
 
-//        etUsername = findViewById(R.id.etUsername);
-//        etEmail = findViewById(R.id.etEmail);
-//        bLogout = findViewById(R.id.bLogout);
-//
-//        bLogout.setOnClickListener(this);
-//    }
-//    @Override
-//    public void onClick(View v) {
-//            switch(v.getId()){
-//            case R.id.bLogout:
-//
-//            startActivity(new Intent(this, Login.class));
-//            break;
-//            }
+
         BottomNavigationView bottomNavigationView =   findViewById(R.id.bottom_navigation);
 
-        bottomNavigationView.setSelectedItemId(R.id.profile);
+        bottomNavigationView.setSelectedItemId(R.id.saved);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -48,24 +29,24 @@ public class Profile extends AppCompatActivity /*implements View.OnClickListener
                 switch (menuItem.getItemId()){
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext()
-                                ,MainActivity.class));
+                                , MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.search:
                         startActivity(new Intent(getApplicationContext()
-                                ,Search.class));
+                                , NewPostActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.saved:
-                        startActivity(new Intent(getApplicationContext()
-                                ,Saved.class));
-                        overridePendingTransition(0,0);
                         return true;
                     case R.id.profile:
+                        startActivity(new Intent(getApplicationContext()
+                                , ProfileActivity.class));
+                        overridePendingTransition(0,0);
                         return true;
                     case R.id.more:
                         startActivity(new Intent(getApplicationContext()
-                                ,More.class));
+                                , MoreActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

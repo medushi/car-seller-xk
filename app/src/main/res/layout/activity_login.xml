@@ -76,6 +76,6 @@
             android:textSize="18dp"
             android:textStyle="bold" />
 
-    </LinearLayout>L
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

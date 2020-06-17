@@ -1,4 +1,4 @@
-package com.example.carsellerxk;
+package com.example.carsellerxk.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.carsellerxk.R;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
 

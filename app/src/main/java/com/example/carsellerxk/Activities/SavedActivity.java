@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
-import com.example.carsellerxk.MainActivity;
 import com.example.carsellerxk.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -32,7 +30,7 @@ public class SavedActivity extends AppCompatActivity {
                                 , MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.search:
+                    case R.id.newpost:
                         startActivity(new Intent(getApplicationContext()
                                 , NewPostActivity.class));
                         overridePendingTransition(0,0);
@@ -46,7 +44,7 @@ public class SavedActivity extends AppCompatActivity {
                         return true;
                     case R.id.more:
                         startActivity(new Intent(getApplicationContext()
-                                , MoreActivity.class));
+                                , Login.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

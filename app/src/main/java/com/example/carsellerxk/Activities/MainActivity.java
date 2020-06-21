@@ -1,4 +1,4 @@
-package com.example.carsellerxk;
+package com.example.carsellerxk.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import com.example.carsellerxk.Activities.MoreActivity;
 import com.example.carsellerxk.Activities.NewPostActivity;
 import com.example.carsellerxk.Activities.ProfileActivity;
 import com.example.carsellerxk.Activities.SavedActivity;
+import com.example.carsellerxk.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity{
@@ -33,9 +34,9 @@ public class MainActivity extends AppCompatActivity{
                 switch (menuItem.getItemId()){
                     case R.id.home:
                         return true;
-                    case R.id.search:
+                    case R.id.newpost:
                         startActivity(new Intent(getApplicationContext()
-                                , NewPostActivity.class));
+                                , Login.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.saved:
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity{
                         return true;
                     case R.id.more:
                         startActivity(new Intent(getApplicationContext()
-                                , MoreActivity.class));
+                                , Login.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

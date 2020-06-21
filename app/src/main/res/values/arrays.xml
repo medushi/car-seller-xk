@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerYearofProduction">
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+    </string-array>
+    <string-array name="spinnerManufacturer">
+        <item>Volkswagen</item>
+        <item>Mercedes Benz</item>
+        <item>Fiat</item>
+        <item>Renault</item>
+        <item>Audi</item>
+        <item>Peugeot</item>
+    </string-array>
+    <string-array name="spinnerAcceleratingType">
+        <item>Manual</item>
+        <item>Automatik</item>
+    </string-array>
+    <string-array name="spinnerCities">
+        <item>Prishtine</item>
+        <item>Peje</item>
+        <item>Gjilan</item>
+        <item>Gjakove</item>
+        <item>Prizren</item>
+        <item>Mitrovice</item>
+    </string-array>
+</resources>

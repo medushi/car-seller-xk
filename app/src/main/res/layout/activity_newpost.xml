@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NewPostActivity">
+
+    <LinearLayout
+        android:id="@+id/containerNewPostTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Titulli" />
+
+        <EditText
+            android:id="@+id/etNewPostTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <GridLayout
+        android:id="@+id/containerNewPostSpecs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:columnCount="2"
+        android:rowCount="3"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintTop_toBottomOf="@id/containerNewPostTitle"
+        app:layout_constraintVertical_bias="0.10"
+        tools:layout_editor_absoluteX="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="0.3"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Specifikat"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:text="Viti i prodhimit" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:entries="@array/spinnerYearofProduction"
+            android:id="@+id/spinnerYearOfProduction"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:text="Prodhuesi" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:entries="@array/spinnerManufacturer"
+            android:id="@+id/spinnerManufacturer"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:text="Lloji i marshit" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:entries="@array/spinnerAcceleratingType"
+            android:id="@+id/spinnerAccelerateType"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:text="Qyteti" />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:entries="@array/spinnerCities"
+            android:id="@+id/spinnerCity"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:paddingTop="15dp"
+            android:text="Cmimi" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="0.5"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:inputType="numberDecimal"
+                android:id="@+id/etPrice"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:text="€" />
+        </LinearLayout>
+    </GridLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/clnewPostImageSection"
+    app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+    app:layout_constraintTop_toBottomOf="@id/containerNewPostSpecs"
+    app:layout_constraintVertical_bias="0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintVertical_bias="0.05">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Ngarko fotografi" />
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="160dp"-->
+<!--            android:background="@color/colorPrimaryDark">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/containerNewPostImages"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+
+<!--            </LinearLayout>-->
+
+<!--        </HorizontalScrollView>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/containerNewPostImages">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/ivimg1"
+                android:layout_margin="@dimen/cardview_default_radius"/>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/ivimg2"
+                android:layout_margin="@dimen/cardview_default_radius"/>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:background="@color/colorPrimaryDark"
+                android:id="@+id/ivimg3"
+                android:layout_margin="@dimen/cardview_default_radius"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/btnsContainer"
+    app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+    app:layout_constraintVertical_bias="0"
+    app:layout_constraintTop_toBottomOf="@id/clnewPostImageSection">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@id/btnPostoShpalljen"
+        android:id="@+id/btnsImageLoad">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="NGARKO"
+            android:id="@+id/btnNgarkoFoto"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="SHKREP"
+            android:id="@+id/btnShkrepFoto"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnPostoShpalljen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POSTO SHPALLJEN"
+        app:layout_constraintTop_toBottomOf="@id/btnsImageLoad"
+        app:layout_constraintVertical_bias="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorPrimary"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

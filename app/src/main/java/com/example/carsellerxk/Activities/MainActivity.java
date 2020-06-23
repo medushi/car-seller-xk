@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
 import com.example.carsellerxk.Activities.MoreActivity;
 import com.example.carsellerxk.Activities.NewPostActivity;
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity{
                         return true;
                     case R.id.newpost:
                         startActivity(new Intent(getApplicationContext()
-                                , Login.class));
+                                , NewPostActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.saved:
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity{
                         return true;
                     case R.id.more:
                         startActivity(new Intent(getApplicationContext()
-                                , Login.class));
+                                , MoreActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

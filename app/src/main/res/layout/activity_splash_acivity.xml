@@ -46,7 +46,7 @@
         android:gravity="center_horizontal"
         android:text="Car Seller"
         android:textColor="#000000"
-        android:textSize="31sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

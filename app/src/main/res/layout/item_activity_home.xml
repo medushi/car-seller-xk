@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/ivPostOwner"
+           android:layout_width="50dp"
+           android:layout_height="50dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPostOwnerName"
+            android:text="Filani"
+            android:textAlignment="center"
+            android:gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPostTitle"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="TITULLI I POSTIMIT"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPostLocation"
+            android:text="Qyteti"
+            android:gravity="center"
+            android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

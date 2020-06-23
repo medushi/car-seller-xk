@@ -7,13 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.carsellerxk.R;
 
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
     Button bRegister;
-    EditText etUsername, etEmail, etPassword;
+    EditText etUsername, etEmail, etPassword,etSurname,etCity;
+    TextView tvLoginLink;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,12 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
         bRegister = findViewById(R.id.bRegister);
+        etSurname = findViewById(R.id.etSurname);
+        etCity = findViewById(R.id.etCity);
+        tvLoginLink = findViewById(R.id.tvLoginLink);
 
         bRegister.setOnClickListener(this);
+        tvLoginLink.setOnClickListener(this);
 
     }
 
@@ -34,6 +40,10 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         switch(v.getId()){
             case R.id.bRegister:
                 startActivity(new Intent(this, MainActivity.class));
+                break;
+
+            case R.id.tvLoginLink:
+                startActivity(new Intent(this, Login.class));
                 break;
         }
     }

@@ -62,7 +62,7 @@ public class ProfileActivity extends AppCompatActivity /*implements View.OnClick
                         return true;
                     case R.id.more:
                         startActivity(new Intent(getApplicationContext()
-                                , Login.class));
+                                , MoreActivity.class));
                         overridePendingTransition(0,0);
                         return true;
                 }

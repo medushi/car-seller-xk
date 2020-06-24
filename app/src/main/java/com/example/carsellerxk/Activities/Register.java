@@ -2,6 +2,7 @@ package com.example.carsellerxk.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -32,6 +33,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.bRegister:
+                startActivity(new Intent(this, MainActivity.class));
                 break;
         }
     }

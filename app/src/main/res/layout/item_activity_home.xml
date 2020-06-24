@@ -2,43 +2,135 @@
 <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/itemRowHolder">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-       <de.hdodenhof.circleimageview.CircleImageView
-           android:id="@+id/ivPostOwner"
-           android:layout_width="50dp"
-           android:layout_height="50dp"/>
-        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivPostOwner"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPostOwnerName"
+                android:text="Filani"
+                android:textAlignment="center"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtPostOwnerName"
-            android:text="Filani"
-            android:textAlignment="center"
-            android:gravity="center"/>
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPostTitle"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="TITULLI I POSTIMIT"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtPostLocation"
+                android:text="Qyteti"
+                android:gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:id="@+id/secondRowWrapper"
+        android:orientation="horizontal">
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="230dp"
+           android:id="@+id/postImagesHolder">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+           </LinearLayout>
+
+       </HorizontalScrollView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdRowWrapper"
+        android:orientation="horizontal"
+        android:layout_weight="1">
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/txtPostTitle"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:padding="15dp"
-            android:text="TITULLI I POSTIMIT"/>
+            android:layout_weight="0.5"
+            android:id="@+id/txtCarPrice"
+            android:gravity="right"
+            android:text="7500"/>
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
             android:layout_height="wrap_content"
-            android:id="@+id/txtPostLocation"
-            android:text="Qyteti"
-            android:gravity="center"
+            android:text="€"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fourthRowWrapper"
+        android:orientation="horizontal"
+        android:layout_weight="3">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCarManufacturer"
+            android:layout_weight="1"
+            android:text="MERCEDES" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCarYearOfProduction"
+            android:layout_weight="1"
+            android:text="2010"
+            android:gravity="center_horizontal"
             android:textAlignment="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCarAcceleratingType"
+            android:layout_weight="1"
+            android:text="Manual"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fifthRowWrapper"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/btnBuy"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:id="@+id/btnAddToFavorites"/>
+
     </LinearLayout>
 </LinearLayout>
+
 
 </RelativeLayout>

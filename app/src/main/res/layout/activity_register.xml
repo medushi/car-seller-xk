@@ -8,51 +8,78 @@
     tools:context=".Activities.Register">
 
 
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo_circle" />
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Emri i perdoruesit"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-smallcaps"
-        android:textStyle="bold"/>
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="sans-serif-medium"-->
+<!--        android:text="Emri i perdoruesit"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textStyle="bold" />-->
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/et_rounded"
+        android:hint="Emri"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="E-mail"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-smallcaps"
-        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/etSurname"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/et_rounded"
+        android:hint="Mbiemri"/>
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/icon_location"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/et_rounded"
+        android:hint="Qyteti"/>
 
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/icon_email"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:hint="E-mail"
+        android:background="@drawable/et_rounded"
         android:inputType="textEmailAddress"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:text="Fjalekalimi"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:fontFamily="sans-serif-smallcaps"
-        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
         android:inputType="textPassword"
-        android:layout_height="wrap_content" />
+        android:hint="Fjalekalimi"
+        android:drawableLeft="@drawable/icon_pass"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/et_rounded"
+        android:layout_height="60dp" />
 
     <Button
         android:id="@+id/bRegister"
@@ -62,5 +89,18 @@
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:background="@drawable/btn_rounded"/>
+
+    <TextView
+        android:id="@+id/tvLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-light"
+        android:layout_gravity="center"
+        android:text="Jeni i regjistruar? Kycu tani"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
 
 </LinearLayout>

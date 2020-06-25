@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="3dp">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -53,12 +55,29 @@
        <HorizontalScrollView
            android:layout_width="match_parent"
            android:layout_height="230dp"
-           android:id="@+id/postImagesHolder">
+           android:id="@+id/postImagesScroller">
            <LinearLayout
                android:layout_width="match_parent"
-               android:layout_height="match_parent">
+               android:orientation="horizontal"
+               android:layout_height="match_parent"
+               android:id="@+id/postImagesHolder">
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/ivpostImage1"
+                   android:scaleType="fitXY"/>
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/ivpostImage2"
+                   android:adjustViewBounds="true"
+                   android:scaleType="fitXY"/>
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:id="@+id/ivpostImage3"
+                   android:scaleType="fitXY"/>
            </LinearLayout>
-
        </HorizontalScrollView>
 
     </LinearLayout>
@@ -131,6 +150,4 @@
 
     </LinearLayout>
 </LinearLayout>
-
-
 </RelativeLayout>

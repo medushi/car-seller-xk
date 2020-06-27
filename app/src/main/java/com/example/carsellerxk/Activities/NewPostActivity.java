@@ -183,7 +183,7 @@ public class NewPostActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.home:
                         startActivity(new Intent(getApplicationContext()
-                                , MainActivity.class));
+                                , HomeActivity.class));
                         overridePendingTransition(0, 0);
                         return true;
                     case R.id.newpost:

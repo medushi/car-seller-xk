@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -66,7 +67,7 @@ public class CarPostsAdapter extends RecyclerView.Adapter<CarPostsAdapter.CarPos
         Picasso.get().load(carPostModelList.get(position).getImg1()).noFade().into(holder.ivPostImage1);
         Picasso.get().load(carPostModelList.get(position).getImg2()).noFade().into(holder.ivPostImage2);
         Picasso.get().load(carPostModelList.get(position).getImg3()).noFade().into(holder.ivPostImage3);
-
+        //holder.loader.setVisibility(View.GONE);
     }
 
     @Override
@@ -83,6 +84,7 @@ public class CarPostsAdapter extends RecyclerView.Adapter<CarPostsAdapter.CarPos
         TextView txtPostTitle,txtPostOwner,txtPostlocation,txtCarYearofProduction,txtCarAcceleratingType,txtCarPrice,txtCarManufacturer;
         ImageView ivPostOwner,ivPostImage1,ivPostImage2,ivPostImage3;
         Button btnBuy,btnAddToFavorites;
+        ProgressBar loader;
         public CarPostsViewHolder(View view) {
             super(view);
             txtPostTitle=view.findViewById(R.id.txtPostTitle);
@@ -98,8 +100,10 @@ public class CarPostsAdapter extends RecyclerView.Adapter<CarPostsAdapter.CarPos
             ivPostImage3=view.findViewById(R.id.ivpostImage3);
             btnBuy=view.findViewById(R.id.btnBuy);
             btnAddToFavorites=view.findViewById(R.id.btnAddToFavorites);
+            //loader=view.findViewById(R.id.loader);
             btnBuy.setOnClickListener(this);
             btnAddToFavorites.setOnClickListener(this);
+
 
         }
         @Override

@@ -10,7 +10,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 
 import com.example.carsellerxk.Helpers.Adapters.CarPostsAdapter;
 import com.example.carsellerxk.Helpers.FireBaseRTDHelper;
@@ -36,13 +38,14 @@ public class HomeActivity extends AppCompatActivity {
     RecyclerView postsRecyclerView;
     CarPostsAdapter carPostsAdapter;
     List<PostsModel> testingDataList = new ArrayList<>();
+    ProgressBar loader;
     BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-
+        loader=findViewById(R.id.loader);
         _dbReference = FirebaseDatabase.getInstance().getReference().child("posts");
         _dbReferenceUsersInfo =FirebaseDatabase.getInstance().getReference().child("userinfo");
         _dbReference.addValueEventListener(new ValueEventListener() {
@@ -87,6 +90,10 @@ public class HomeActivity extends AppCompatActivity {
                 postsRecyclerView.setLayoutManager(layoutManager);
                 postsRecyclerView.setItemAnimator(new DefaultItemAnimator());
                 postsRecyclerView.setAdapter(carPostsAdapter);
+                carPostsAdapter.notifyDataSetChanged();
+                postsRecyclerView.setVisibility(View.VISIBLE);
+                loader.setVisibility(View.GONE);
+
             }
 
             @Override

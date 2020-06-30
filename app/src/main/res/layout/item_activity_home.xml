@@ -62,21 +62,24 @@
                android:layout_height="match_parent"
                android:id="@+id/postImagesHolder">
                <ImageView
-                   android:layout_width="match_parent"
+                   android:layout_width="260dp"
                    android:layout_height="match_parent"
                    android:id="@+id/ivpostImage1"
-                   android:scaleType="fitXY"/>
+                   android:scaleType="fitXY"
+                   android:layout_marginHorizontal="10dp"/>
                <ImageView
-                   android:layout_width="match_parent"
+                   android:layout_width="280dp"
                    android:layout_height="match_parent"
                    android:id="@+id/ivpostImage2"
                    android:adjustViewBounds="true"
-                   android:scaleType="fitXY"/>
+                   android:scaleType="fitXY"
+                   android:layout_marginHorizontal="10dp"/>
                <ImageView
-                   android:layout_width="match_parent"
+                   android:layout_width="280dp"
                    android:layout_height="match_parent"
                    android:id="@+id/ivpostImage3"
-                   android:scaleType="fitXY"/>
+                   android:scaleType="fitXY"
+                   android:layout_marginHorizontal="10dp"/>
            </LinearLayout>
        </HorizontalScrollView>
 
@@ -141,11 +144,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
+            android:text="BLEJ TANI"
             android:id="@+id/btnBuy"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
+            android:text="SHTO SI FAVORIT"
             android:id="@+id/btnAddToFavorites"/>
 
     </LinearLayout>

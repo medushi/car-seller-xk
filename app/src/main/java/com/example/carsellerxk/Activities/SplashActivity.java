@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import android.util.Log;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.carsellerxk.Helpers.LoginHelper;
 import com.example.carsellerxk.R;
 
 
@@ -20,9 +22,9 @@ public class SplashActivity extends AppCompatActivity {
     private static int SPLASH_SCREEN = 5000;
 
     //variablat
-    Animation topAnim , bottomAnim;
+    Animation topAnim, bottomAnim;
     ImageView image;
-    TextView logo,slogan;
+    TextView logo, slogan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +33,8 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_acivity);
 
         //Animacione
-        topAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
-        bottomAnim = AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
+        topAnim = AnimationUtils.loadAnimation(this, R.anim.top_animation);
+        bottomAnim = AnimationUtils.loadAnimation(this, R.anim.bottom_animation);
 
         image = findViewById(R.id.imageView);
         logo = findViewById(R.id.textView);
@@ -46,11 +48,13 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this, Login.class);
-                startActivity(intent);
+                if (LoginHelper.getUserLoggedInStatus(getApplication()))
+                    startActivity(new Intent(SplashActivity.this, HomeActivity.class));
+                if (!LoginHelper.getUserLoggedInStatus(getApplication()))
+                    startActivity(new Intent(SplashActivity.this, Login.class));
                 finish();
             }
-        },SPLASH_SCREEN);
+        }, SPLASH_SCREEN);
 
     }
 }

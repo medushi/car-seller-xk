@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.carsellerxk.Helpers.LoginHelper;
 import com.example.carsellerxk.Models.RegistrationModel;
 import com.example.carsellerxk.R;
 import com.google.firebase.database.DataSnapshot;
@@ -60,13 +61,18 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         bLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (isLoginSuccessful(etEmail.getText().toString(), etPassword.getText().toString())){
-                    printInLoginMessage("succeeded");
-                    startActivity(new Intent(Login.this,HomeActivity.class));
-                    finish();
+                if (!LoginHelper.areFieldsValidated(etEmail.getText().toString(), etPassword.getText().toString()))
+                    printInLoginMessage("failedvalidation");
+                if (LoginHelper.areFieldsValidated(etEmail.getText().toString(), etPassword.getText().toString())) {
+                    if (isLoginSuccessful(etEmail.getText().toString(), etPassword.getText().toString())) {
+                        LoginHelper.setCurrentUserLoggedInData(getApplication(), etEmail.getText().toString());
+                        LoginHelper.setCurrentUserLoggedInStatus(getApplication(), true);
+                        printInLoginMessage("succeeded");
+                        startActivity(new Intent(Login.this, HomeActivity.class));
+                        finish();
+                    } else
+                        printInLoginMessage("failed");
                 }
-                else
-                    printInLoginMessage("failed");
             }
         });
 
@@ -99,7 +105,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     private void printInLoginMessage(String typeCase) {
         if (typeCase.equals("failed"))
             Toast.makeText(Login.this, "Kredencialet jane gabim!", Toast.LENGTH_LONG).show();
-        else if (typeCase.equals("succeeded"))
+        if (typeCase.equals("succeeded"))
             Toast.makeText(Login.this, "Kycja u be me sukses!", Toast.LENGTH_LONG).show();
+        else if (typeCase.equals("failedvalidation"))
+            Toast.makeText(Login.this, "Ju lutem plotesoni fushat!", Toast.LENGTH_LONG).show();
     }
 }

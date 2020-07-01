@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorY"
+    android:orientation="horizontal"
+    tools:context=".FragmentProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/fragment_profile"
+        android:textSize="24dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorwhite"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Emri:"
+        android:textSize="22dp"
+        android:textColor="@color/colorblack"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Mbiemri:"
+        android:textSize="22dp"
+        android:textColor="@color/colorblack"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="50dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Email adresa:"
+        android:textSize="22dp"
+        android:textColor="@color/colorblack"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="50dp"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

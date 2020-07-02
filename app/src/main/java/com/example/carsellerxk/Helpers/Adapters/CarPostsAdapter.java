@@ -64,6 +64,7 @@ public class CarPostsAdapter extends RecyclerView.Adapter<CarPostsAdapter.CarPos
         holder.txtCarManufacturer.setText(carPostModelList.get(position).getManufacturer());
         holder.txtCarAcceleratingType.setText(carPostModelList.get(position).getAccType());
         holder.txtPostTitle.setText(carPostModelList.get(position).getPostTitle());
+        holder.txtCarPrice.setText(carPostModelList.get(position).getPrice()+"");
         Picasso.get().load(Statics.DefaultPostOwnerImage).noFade().into(holder.ivPostOwner);
         Picasso.get().load(carPostModelList.get(position).getImg1()).noFade().into(holder.ivPostImage1);
         Picasso.get().load(carPostModelList.get(position).getImg2()).noFade().into(holder.ivPostImage2);

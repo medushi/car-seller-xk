@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.carsellerxk.FragmentProfile;
-import com.example.carsellerxk.FragmentSettings;
+import com.example.carsellerxk.Fragments.FragmentProfile;
+import com.example.carsellerxk.Fragments.FragmentSettings;
 import com.example.carsellerxk.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 

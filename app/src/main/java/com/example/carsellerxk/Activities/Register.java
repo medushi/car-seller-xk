@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.carsellerxk.Models.RegistrationModel;
 import com.example.carsellerxk.R;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -59,7 +60,8 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
             @Override
             public void onClick(View v) {
                 _dbReference.child("uid" + _nextUserId).setValue(getUserToRegister());
-                Toast.makeText(Register.this, "U regjistruat me sukses!", Toast.LENGTH_LONG).show();
+                Snackbar snackbar = Snackbar.make(v,"Regjistrimi me sukses! Mund te kyceni",Snackbar.LENGTH_LONG);
+                snackbar.show();
             }
         });
         tvLoginLink.setOnClickListener(this);

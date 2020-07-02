@@ -1,4 +1,4 @@
-package com.example.carsellerxk;
+package com.example.carsellerxk.Fragments;
 
 
 import android.content.Intent;
@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.carsellerxk.Activities.Login;
 import com.example.carsellerxk.Activities.ProfileActivity;
 import com.example.carsellerxk.Helpers.LoginHelper;
+import com.example.carsellerxk.R;
 
 
 /**

@@ -31,7 +31,7 @@
             android:background="@drawable/et_rounded"
             android:drawableLeft="@drawable/ic_person_black_24dp"
             android:drawablePadding="5dp"
-            android:hint="Emri"
+            android:hint="@string/name"
             android:paddingLeft="15dp" />
 
         <EditText
@@ -44,7 +44,7 @@
             android:background="@drawable/et_rounded"
             android:drawableLeft="@drawable/ic_person_black_24dp"
             android:drawablePadding="5dp"
-            android:hint="Mbiemri"
+            android:hint="@string/surname"
             android:paddingLeft="15dp" />
 
     </LinearLayout>
@@ -58,7 +58,7 @@
         android:drawablePadding="5dp"
         android:paddingLeft="15dp"
         android:background="@drawable/et_rounded"
-        android:hint="Qyteti"/>
+        android:hint="@string/city"/>
 
     <EditText
         android:id="@+id/etPhone"
@@ -69,7 +69,7 @@
         android:drawablePadding="5dp"
         android:paddingLeft="15dp"
         android:background="@drawable/et_rounded"
-        android:hint="Telefoni"/>
+        android:hint="@string/phone"/>
 
     <EditText
         android:id="@+id/etEmail"
@@ -79,7 +79,7 @@
         android:drawableLeft="@drawable/icon_email"
         android:drawablePadding="5dp"
         android:paddingLeft="15dp"
-        android:hint="E-mail"
+        android:hint="@string/email"
         android:background="@drawable/et_rounded"
         android:inputType="textEmailAddress"/>
 
@@ -88,7 +88,7 @@
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
         android:inputType="textPassword"
-        android:hint="Fjalekalimi"
+        android:hint="@string/password"
         android:drawableLeft="@drawable/icon_pass"
         android:drawablePadding="5dp"
         android:paddingLeft="15dp"
@@ -98,24 +98,44 @@
 
     <Button
         android:id="@+id/bRegister"
-        android:text="Regjistrohu"
+        android:text="@string/register"
         android:layout_marginHorizontal="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#000000"
         android:background="@drawable/btn_rounded"/>
-
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
-        android:id="@+id/tvLoginLink"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="2dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-light"
-        android:layout_gravity="center"
-        android:text="Jeni i regjistruar? Kycu tani"
-        android:textColor="#000000"
-        android:textSize="16dp"
-        android:textStyle="bold" />
+        android:gravity="right"
+        android:text="@string/registered"
+        android:layout_weight="0.5"
+        android:textColor="#FF2F2F"
+        android:textSize="14dp"
+        android:textStyle="bold"
 
+        />
+        <TextView
+            android:id="@+id/tvLoginLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+            android:text="@string/login_now"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            />
+
+
+    </LinearLayout>
 </LinearLayout>

@@ -10,3 +10,6 @@
 
 >This app requires permission for Internet,Camera and Storage
 >Besides default libraries we used picasso for loading images from url, open source round image implementation library.As for services app has been integrated with FireBase Services: Real Time Database and Storage
+
+## Features
+- Register to sell a car. Give a title to your post, choose specifics, desired price,location and upload up to three images from camera or gallery.

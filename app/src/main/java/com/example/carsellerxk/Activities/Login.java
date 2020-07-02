@@ -91,6 +91,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        finish();
+    }
+
     private boolean isLoginSuccessful(String email, String password) {
         boolean stateOfLogin = false;
         for (RegistrationModel userRegistered : _registeredUsers) {

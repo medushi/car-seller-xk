@@ -42,10 +42,10 @@
         android:layout_width="144dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="Bled"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/colorblack"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:id="@+id/tvLoggedUserFirstName"/>
 
     <View
         android:layout_width="match_parent"
@@ -67,10 +67,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="Kastrati"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/colorblack"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:id="@+id/tvLoggedUserLastName"/>
 
     <View
         android:layout_width="match_parent"
@@ -92,10 +92,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:text="bledi-kastratii@live.com"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/colorblack"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:id="@+id/tvLoggedUserEmail"/>
 
     <View
         android:layout_width="match_parent"

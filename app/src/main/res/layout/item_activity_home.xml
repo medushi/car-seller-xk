@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_marginVertical="15dp"
     android:layout_marginHorizontal="3dp">
 
@@ -7,7 +8,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@color/colorwhite"
+    android:paddingTop="5dp"
     android:id="@+id/itemRowHolder">
+
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -37,6 +43,8 @@
                 android:id="@+id/txtPostTitle"
                 android:textAlignment="center"
                 android:gravity="center"
+                android:textColor="@color/colorblack"
+                android:fontFamily="sans-serif-medium"
                 android:padding="15dp"
                 android:text="TITULLI I POSTIMIT"/>
             <TextView
@@ -85,26 +93,11 @@
        </HorizontalScrollView>
 
     </LinearLayout>
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/thirdRowWrapper"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:id="@+id/txtCarPrice"
-            android:gravity="right"
-            android:text="7500"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
-            android:layout_height="wrap_content"
-            android:text="€"/>
-    </LinearLayout>
-
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorY" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -116,44 +109,112 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtCarManufacturer"
             android:layout_weight="1"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="5dp"
             android:text="MERCEDES" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorY" />
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/txtCarYearOfProduction"
             android:layout_weight="1"
             android:text="2010"
+            android:fontFamily="sans-serif-light"
             android:gravity="center_horizontal"
             android:textAlignment="center"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorY" />
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/txtCarAcceleratingType"
             android:layout_weight="1"
             android:text="Manual"
+            android:fontFamily="sans-serif-light"
             android:gravity="center_horizontal"
             android:textAlignment="center"/>
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorY" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdRowWrapper"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtCarPrice"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="@color/colorY"
+            android:layout_marginLeft="5dp"
+            android:textColorHighlight="@color/colorPrimaryDark"
+            android:text="7500"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="@color/colorY"
+            android:text="€"/>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/fifthRowWrapper"
         android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         android:layout_weight="1">
+
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
             android:text="BLEJ TANI"
+            android:drawableLeft="@drawable/icon_phone"
+            android:paddingLeft="15dp"
+            android:paddingRight="25dp"
+            android:layout_marginRight="1.5dp"
+            android:background="@drawable/btn_rounded"
             android:id="@+id/btnBuy"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5"
+            android:layout_marginLeft="1.5dp"
+            android:background="@drawable/btn_rounded"
+            android:drawableLeft="@drawable/ic_favorite_black_24dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
             android:text="SHTO SI FAVORIT"
             android:id="@+id/btnAddToFavorites"/>
 
+
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorY" />
 </LinearLayout>
 </RelativeLayout>

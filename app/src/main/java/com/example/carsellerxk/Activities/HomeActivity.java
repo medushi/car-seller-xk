@@ -37,7 +37,7 @@ public class HomeActivity extends AppCompatActivity {
     DatabaseReference _dbReferenceUsersInfo;
     RecyclerView postsRecyclerView;
     CarPostsAdapter carPostsAdapter;
-    List<PostsModel> testingDataList = new ArrayList<>();
+    List<PostsModel> postsList = new ArrayList<>();
     ProgressBar loader;
     BottomNavigationView bottomNavigationView;
 
@@ -56,14 +56,14 @@ public class HomeActivity extends AppCompatActivity {
                     if(hasImagesStored){
                         int imagesCount = (int) dsp.child("images").getChildrenCount();
                         if(imagesCount==1){
-                            testingDataList.add(new PostsModel("Filani",dsp.child("city").getValue().toString(),dsp.child("title").getValue().toString(),
+                            postsList.add(new PostsModel("Filani",dsp.child("title").getValue().toString(),dsp.child("city").getValue().toString(),
                                     dsp.child("typeOfAccelerate").getValue().toString(),dsp.child("manufacturer").getValue().toString(),
                                     dsp.child("images").child("0").getValue().toString(), Statics.DefaultImage,Statics.DefaultImage,
                                     Integer.parseInt(dsp.child("yearOfProduction").getValue().toString()),
                                     Double.valueOf(dsp.child("price").getValue().toString())));
                         }
                         if(imagesCount==2){
-                            testingDataList.add(new PostsModel("Filani",dsp.child("city").getValue().toString(),dsp.child("title").getValue().toString(),
+                            postsList.add(new PostsModel("Filani",dsp.child("title").getValue().toString(),dsp.child("city").getValue().toString(),
                                     dsp.child("typeOfAccelerate").getValue().toString(),dsp.child("manufacturer").getValue().toString(),
                                     dsp.child("images").child("0").getValue().toString(), dsp.child("images").child("1").getValue().toString(),
                                     Statics.DefaultImage,
@@ -71,7 +71,7 @@ public class HomeActivity extends AppCompatActivity {
                                     Double.valueOf(dsp.child("price").getValue().toString())));
                         }
                         if(imagesCount>=3){
-                            testingDataList.add(new PostsModel("Filani",dsp.child("city").getValue().toString(),dsp.child("title").getValue().toString(),
+                            postsList.add(new PostsModel("Filani",dsp.child("title").getValue().toString(),dsp.child("city").getValue().toString(),
                                     dsp.child("typeOfAccelerate").getValue().toString(),dsp.child("manufacturer").getValue().toString(),
                                     dsp.child("images").child("0").getValue().toString(), dsp.child("images").child("1").getValue().toString(),
                                     dsp.child("images").child("2").getValue().toString(),
@@ -85,7 +85,7 @@ public class HomeActivity extends AppCompatActivity {
                     //,100)));
                 }
                 postsRecyclerView=findViewById(R.id.postsRecyclerView);
-                carPostsAdapter = new CarPostsAdapter(testingDataList, HomeActivity.this);
+                carPostsAdapter = new CarPostsAdapter(postsList, HomeActivity.this);
                 RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(HomeActivity.this, LinearLayoutManager.VERTICAL, false);
                 postsRecyclerView.setLayoutManager(layoutManager);
                 postsRecyclerView.setItemAnimator(new DefaultItemAnimator());

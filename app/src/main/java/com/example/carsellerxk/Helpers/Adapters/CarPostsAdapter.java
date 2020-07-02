@@ -14,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.carsellerxk.Activities.HomeActivity;
+import com.example.carsellerxk.Helpers.LoginHelper;
+import com.example.carsellerxk.Helpers.SQLiteHelper;
 import com.example.carsellerxk.Helpers.Statics;
 import com.example.carsellerxk.Interfaces.IItemClickListener;
 import com.example.carsellerxk.Models.NewPostUploadModel;
@@ -110,8 +112,12 @@ public class CarPostsAdapter extends RecyclerView.Adapter<CarPostsAdapter.CarPos
             if(view.getId()==R.id.btnBuy){
                 Toast.makeText(context,"bought succesfully",Toast.LENGTH_LONG).show();
             }
-            else if(view.getId()==R.id.btnAddToFavorites)
+            else if(view.getId()==R.id.btnAddToFavorites){
                 Toast.makeText(context,"Added to favorites",Toast.LENGTH_LONG).show();
+                SQLiteHelper sqlLiteInstance = new SQLiteHelper(context);
+                sqlLiteInstance.saveToFavorites(LoginHelper.getLoggedInEmailUser(context),txtPostTitle.getText().toString());
+            }
+
         }
     }
 }

@@ -44,4 +44,9 @@ public class LoginHelper {
     public static boolean areFieldsValidated(String email, String password) {
         return !email.trim().isEmpty() && !password.trim().isEmpty();
     }
+
+    public static boolean areFieldsValidated(String firstName,String lastName,String password,String email,String city){
+        return !firstName.trim().isEmpty() && !lastName.trim().isEmpty() && !password.trim().isEmpty() &&
+                email.trim().isEmpty() && !city.trim().isEmpty();
+    }
 }

@@ -5,5 +5,27 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment_profile">Të dhënat e përdoruesit</string>
     <string name="fragment_settings">Pamja aplikacionit</string>
+    <string name="home">Kryefaqja</string>
+    <string name="add">Shto</string>
+    <string name="saved">Të Ruajtura</string>
+    <string name="profile">Profili</string>
+    <string name="more">Më shumë</string>
+    <string name="account">Llogaria</string>
+    <string name="register_now"><u>Regjistrohu tani</u></string>
+    <string name="login_now"><u>Kycu tani</u></string>
+    <string name="registered">Jeni i regjistruar?</string>
+    <string name="for_post">Nuk jeni i regjistruar? </string>
+    <string name="login">Kycu</string>
+    <string name="register">Regjistrohu</string>
+    <string name="email">E-mail</string>
+    <string name="password">Fjalëkalimi</string>
+    <string name="name">Emri</string>
+    <string name="surname">Mbiemri</string>
+    <string name="city">Qyteti</string>
+    <string name="phone">Telefoni</string>
+
+
+
+
 
 </resources>

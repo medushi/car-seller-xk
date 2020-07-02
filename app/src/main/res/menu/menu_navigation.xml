@@ -3,25 +3,25 @@
 
     <item
         android:id="@+id/home"
-        android:title="Kryefaqja"
+        android:title="@string/home"
         android:icon="@drawable/ic_home_black_24dp"/>
 
     <item
         android:id="@+id/newpost"
-        android:title="Kërko"
-        android:icon="@drawable/ic_search_black_24dp"/>
+        android:title="@string/add"
+        android:icon="@drawable/icon_add_1"/>
 
     <item
         android:id="@+id/saved"
-        android:title="Të Ruajtura"
+        android:title="@string/saved"
         android:icon="@drawable/ic_favorite_black_24dp"/>
 
     <item
         android:id="@+id/profile"
-        android:title="Profili"
+        android:title="@string/profile"
         android:icon="@drawable/ic_person_black_24dp"/>
 
     <item android:id="@+id/more"
-        android:title="Më shumë"
-        android:icon="@drawable/ic_more_horiz_black_24dp"/>
+        android:title="@string/more"
+        android:icon="@drawable/icon_map"/>
 </menu>

@@ -26,30 +26,30 @@
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:gravity="center_horizontal"
-        android:text="@string/fragment_settings"
+        android:text="@string/account"
         android:textColor="@color/colorY"
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <Button
-        android:layout_width="300dp"
-        android:padding="10dp"
-        android:layout_height="50dp"
-        android:background="@drawable/btnwhite"
-        android:drawableLeft="@drawable/icon_mode"
-        android:drawablePadding="5dp"
-        android:layout_gravity="center_horizontal"
-        android:paddingLeft="15dp"
-        android:text="Ndrysho pamjen e aplikacionit"
-        android:translationZ="2dp"
-        />
+<!--    <Button-->
+<!--        android:layout_width="300dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/btnwhite"-->
+<!--        android:drawableLeft="@drawable/icon_mode"-->
+<!--        android:drawablePadding="5dp"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:text="Ndrysho pamjen e aplikacionit"-->
+<!--        android:translationZ="2dp"-->
+<!--        />-->
 
     <Button
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:background="@drawable/btnwhite"
+        android:background="@drawable/btn_rounded"
         android:text="Ckycu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -62,7 +62,7 @@
         android:padding="15dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/btnwhite"
+        android:background="@drawable/btn_rounded"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"

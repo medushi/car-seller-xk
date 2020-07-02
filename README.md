@@ -18,3 +18,6 @@
 - You can navigate to favorites to view your saved posts by their title.
 - View your profile information and option to logout.
 - View in map number of posts based on city using HERE SDK and clustering (not implemented)
+
+## App usage screenshots
+![Splash Screen](https://pasteboard.co/JfQbUfn.jpg)

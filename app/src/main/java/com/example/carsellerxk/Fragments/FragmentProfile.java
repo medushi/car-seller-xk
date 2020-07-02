@@ -1,4 +1,4 @@
-package com.example.carsellerxk;
+package com.example.carsellerxk.Fragments;
 
 
 import android.os.Bundle;
@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.example.carsellerxk.Helpers.LoginHelper;
 import com.example.carsellerxk.Models.MyProfileModel;
+import com.example.carsellerxk.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

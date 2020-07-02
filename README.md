@@ -19,5 +19,22 @@
 - View your profile information and option to logout.
 - View in map number of posts based on city using HERE SDK and clustering (not implemented)
 
-## App usage screenshots
-![Splash Screen](https://pasteboard.co/JfQbUfn.jpg)
+## Project Structure 
+>We tried to maintain seperation of concerns in terms of structuring project. We divided:
+
+- Activities
+- Fragments
+- Models
+- Helpers such as : Adapters,DatabaseHelpers, ValidationHelpers.
+
+## Fulfillment of requirements based on assignment
+
+- Multiple activities DONE
+- Working with fragments DONE (ProfileActivity)
+- Using various layouts, designs, animations etc DONE
+- Use internal database (Sqlite) DONE (Saving favorite posts)
+- Use shared preferences DONE (Keeping user logged in)
+- Integrate Firebase Services (RTD,Storage) DONE
+- Parsing response from API (NOT DONE).We planned to implement in Maps by getting geo cordinates of city via GEOCODE APi and use that response to draw markers in map
+- Responsive in different screen sizes Partially done
+- Permission configurations,toasts snackbars and menu or tab(we used navigationdrawer) DONE

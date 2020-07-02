@@ -16,35 +16,38 @@
         android:layout_marginBottom="20dp"
         android:src="@drawable/logo_circle" />
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:fontFamily="sans-serif-medium"-->
-<!--        android:text="Emri i perdoruesit"-->
-<!--        android:textColor="#000000"-->
-<!--        android:textStyle="bold" />-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/etUsername"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_height="60dp"
-        android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:drawablePadding="5dp"
-        android:paddingLeft="15dp"
-        android:background="@drawable/et_rounded"
-        android:hint="Emri"/>
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="1.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/et_rounded"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="Emri"
+            android:paddingLeft="15dp" />
 
-    <EditText
-        android:id="@+id/etSurname"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_height="60dp"
-        android:drawableLeft="@drawable/ic_person_black_24dp"
-        android:drawablePadding="5dp"
-        android:paddingLeft="15dp"
-        android:background="@drawable/et_rounded"
-        android:hint="Mbiemri"/>
+        <EditText
+            android:id="@+id/etSurname"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/et_rounded"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="5dp"
+            android:hint="Mbiemri"
+            android:paddingLeft="15dp" />
+
+    </LinearLayout>
 
     <EditText
         android:id="@+id/etCity"
@@ -56,6 +59,17 @@
         android:paddingLeft="15dp"
         android:background="@drawable/et_rounded"
         android:hint="Qyteti"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/icon_phone"
+        android:drawablePadding="5dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/et_rounded"
+        android:hint="Telefoni"/>
 
     <EditText
         android:id="@+id/etEmail"
@@ -79,7 +93,8 @@
         android:drawablePadding="5dp"
         android:paddingLeft="15dp"
         android:background="@drawable/et_rounded"
-        android:layout_height="60dp" />
+        android:layout_height="60dp"
+        />
 
     <Button
         android:id="@+id/bRegister"

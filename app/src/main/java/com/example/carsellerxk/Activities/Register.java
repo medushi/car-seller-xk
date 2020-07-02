@@ -14,7 +14,7 @@ import com.example.carsellerxk.R;
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
     Button bRegister;
-    EditText etUsername, etEmail, etPassword,etSurname,etCity;
+    EditText etUsername, etEmail, etPassword,etSurname,etCity,etPhone;
     TextView tvLoginLink;
 
     @Override
@@ -28,6 +28,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         bRegister = findViewById(R.id.bRegister);
         etSurname = findViewById(R.id.etSurname);
         etCity = findViewById(R.id.etCity);
+        etPhone = findViewById(R.id.etPhone);
         tvLoginLink = findViewById(R.id.tvLoginLink);
 
         bRegister.setOnClickListener(this);

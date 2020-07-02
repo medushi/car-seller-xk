@@ -22,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Register extends AppCompatActivity implements View.OnClickListener {
 
     Button bRegister;
-    EditText etUsername, etEmail, etPassword, etSurname, etCity;
+    EditText etUsername, etEmail, etPassword,etSurname,etCity,etPhone;
     TextView tvLoginLink;
     private DatabaseReference _dbReference;
     private int _nextUserId = 0;
@@ -38,6 +38,7 @@ public class Register extends AppCompatActivity implements View.OnClickListener 
         bRegister = findViewById(R.id.bRegister);
         etSurname = findViewById(R.id.etSurname);
         etCity = findViewById(R.id.etCity);
+        etPhone = findViewById(R.id.etPhone);
         tvLoginLink = findViewById(R.id.tvLoginLink);
 
         _dbReference = FirebaseDatabase.getInstance().getReference().child("userinfo");

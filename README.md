@@ -13,3 +13,8 @@
 
 ## Features
 - Register to sell a car. Give a title to your post, choose specifics, desired price,location and upload up to three images from camera or gallery.
+- View posts.We implemented custom recycler view for this.
+- Add to favorites or buy (of course buy is not implemented);
+- You can navigate to favorites to view your saved posts by their title.
+- View your profile information and option to logout.
+- View in map number of posts based on city using HERE SDK and clustering (not implemented)
